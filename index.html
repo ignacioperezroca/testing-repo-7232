@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Snake</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <div class="panel__header">
+          <div>
+            <p class="eyebrow">Classic Game</p>
+            <h1>Snake</h1>
+          </div>
+          <button id="restart-button" class="button" type="button">Restart</button>
+        </div>
+
+        <div class="stats" aria-label="Game statistics">
+          <p>Score: <span id="score">0</span></p>
+          <p>Status: <span id="status">Ready</span></p>
+        </div>
+
+        <div
+          id="game-board"
+          class="board"
+          role="grid"
+          aria-label="Snake game board"
+        ></div>
+
+        <div class="controls" aria-label="Touch controls">
+          <button class="button control-button" data-direction="up" type="button">Up</button>
+          <div class="controls__row">
+            <button class="button control-button" data-direction="left" type="button">Left</button>
+            <button class="button control-button" data-direction="down" type="button">Down</button>
+            <button class="button control-button" data-direction="right" type="button">Right</button>
+          </div>
+        </div>
+
+        <div class="help">
+          <p>Use arrow keys or WASD to move.</p>
+          <p>Press space to pause, Enter to restart after game over.</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/game.js"></script>
+  </body>
+</html>

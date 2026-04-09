@@ -1,0 +1,11 @@
+{
+  "name": "classic-snake",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --check src/gameLogic.js && node --check src/game.js",
+    "start": "python3 -m http.server 4173",
+    "test": "node --test"
+  }
+}
